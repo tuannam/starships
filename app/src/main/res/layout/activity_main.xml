@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <au.com.starships.view.StarsView
+        android:id="@+id/stars_big"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:starsView_bigStarThreshold="8dp"
+        app:starsView_maxStarSize="16dp"
+        app:starsView_minStarSize="1dp"
+        app:starsView_starColors="@array/star_colors"
+        app:starsView_starCount="35"
+        android:background="@color/black"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageButton
+        android:id="@+id/menu_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ham_menu_icon"
+        app:tint="@color/purple_500"
+        android:scaleType="fitCenter"
+        android:background="@color/transparent"
+        />
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.LargeTextStyle"
+        android:layout_centerInParent="true"
+        android:text="@string/loading_text"
+        />
+</RelativeLayout>

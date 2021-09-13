@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StarShips</string>
+    <string name="loading_text">Loading...</string>
+
+    <string name="name_text">Name:</string>
+    <string name="model_text">Model:</string>
+    <string name="manufacture_text">Mfr:</string>
+    <string name="length_text">Length:</string>
+    <string name="speed_text">Max speed:</string>
+    <string name="passengers_text">Passengers:</string>
+
+    <string name="close_btn_text">Close</string>
+    <string name="exit_btn_text">Exit</string>
+
+    <string name="network_error">Please check connection!!</string>
+    <string name="service_error">Cannot load data!!</string>
+</resources>
